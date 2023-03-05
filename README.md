@@ -6,5 +6,20 @@
 
 打算把单词记录下，这样既学了 C 又学了英语，一举两得。
 
+## 组织结构
 
+```
+.
+├── ModernC_v2019.pdf     # 阅读书电子版
+├── level0                # 第 1 部分涉及的单词
+├── level1
+├── level2
+├── level3
+...
+├── takeaways.tex         # 书中的要点条目
+├── takeaways_more.tex    # 带中文解释的要点条目
+└── README.md
+```
+
+其中是 takeaways 是精华，不翻译中文了。
 

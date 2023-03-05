@@ -1,0 +1,75 @@
+% Modern C 中的要点清单
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+
+% 导言
+\title{Takeaways}
+\author{Jens Gustedt}
+
+\usepackage{pifont}          % 使用打勾图标
+\usepackage{geometry}
+\geometry{left=22mm,right=24mm,top=2.4cm,bottom=2.2cm}
+
+\usepackage{xcolor}
+
+% 要点条目标签
+\newcommand{\ta}[1]{ \noindent\textbf{#1} \ }
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\newcommand{\ok}{\red{\ding{52}}}
+\newcommand{\xmark}{\red{\ding{55}}}
+
+\usepackage{listings}
+
+\begin{document}
+
+\begin{center}	\LARGE\purple{Takeaways} \end{center}
+
+\ta{A} \textit{C} and \textit{C++} are different: don't mix them, and don't mix them up. \ok
+
+\ta{B} Don't panic. \ok
+
+\ta{C} All \textit{C} code must be readable.
+
+\ta{D} Premature optimization is the root of all evit. \green{—— Knuth}
+
+\ta{E} Don't speculate about the performance of code; verify it rigorously.
+
+\section*{Level 0 \ Encounter}
+
+\ta{1} \ C is an \textbf{imperative} programming language.
+
+\ta{2} \ C is a compiled programming language.
+
+\ta{3} \ A correct C program is \textbf{portable} between different platforms.
+
+\ta{4} \ A C program should compile cleanly without warnings.
+
+\ta{5} \ Punctuation characters can be used with several different meanings.
+
+\ta{6} \ All identifiers in a program have to be declared.
+
+\ta{7} \ Identifiers may have several consistent declarations.
+
+\ta{8} \ Declarations are bound to the scope in which they appear.
+
+\ta{9} \ Declarations specify identifiers, whereas definitions specify objects.
+
+\ta{10} An object is defined at the same time it is initialized.
+
+\ta{11} Missing elements in initializers default to 0.
+
+\ta{12} For an array with $n$ elements, the first element has index 0, and the last has index $n-1$.
+
+\ta{13} Each object or function must have exactly one definition.
+
+\ta{14} Domain iterations should be coded with a \lstinline|for| statement.
+
+\ta{15} The loop variable should be defined in the initial part of a \lstinline|for|.
+
+\section*{Level 1 \ Acquaintance}
+
+
+
+\end{document}
